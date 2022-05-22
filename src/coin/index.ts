@@ -13,10 +13,10 @@ export class CoinContract extends constractHelper.BaseContract {
   }
 
   // private 不可被外部读取
-  private balances: { [key: string]: BigInt };
+  private balances: { [key: string]: bigint };
 
   // public 可被外部调用
-  public send = (receiver: Address, amount: BigInt) => {
+  public send = (receiver: Address, amount: bigint) => {
     if (this.balances[receiver.did] > amount) {
       return;
     }

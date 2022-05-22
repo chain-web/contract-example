@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/chain-web/contract-example#readme",
   "dependencies": {
-    "sk-chain": "^0.0.6"
+    "sk-chain": "^0.0.8"
   },
   "devDependencies": {
     "@types/mocha": "^9.1.1",
