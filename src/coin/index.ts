@@ -24,6 +24,6 @@ export class CoinContract extends constractHelper.BaseContract {
       this.balances[receiver.did] = 0n;
     }
     this.balances[receiver.did] += amount;
-    this.balances[this.msg.sender.did] += amount;
+    this.balances[this.msg.sender.did] -= amount;
   };
 }
